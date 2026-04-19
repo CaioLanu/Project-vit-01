@@ -1,0 +1,118 @@
+﻿/* ===== CONTAINER PRINCIPAL ===== */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 45%, #f1f5f9 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0f172a;
+}
+
+.register-box {
+  width: 100%;
+  max-width: 480px;
+  padding: 48px 42px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.register-header h1 {
+  font-size: 30px;
+  color: #0f172a;
+  margin: 0;
+}
+
+.register-header p {
+  color: #475569;
+  margin-top: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #9bacce;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-group input {
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 12px;
+  color: #0f172a;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #7d9cc8;
+  box-shadow: 0 0 20px rgba(125, 156, 200, 0.14);
+}
+
+/* Estilos para select */
+.unit-select {
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 12px;
+  color: #0f172a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.unit-select:focus {
+  outline: none;
+  border-color: #7d9cc8;
+  box-shadow: 0 0 20px rgba(125, 156, 200, 0.14);
+}
+
+.unit-select:disabled {
+  background: #f1f5f9;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.unit-select option {
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 8px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px 18px;
+  background: #475569;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 12px;
+  color: #f8fafc;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn-submit:hover {
+  background: #334155;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .register-box {
+    padding: 32px 26px;
+    margin: 20px;
+  }
+}

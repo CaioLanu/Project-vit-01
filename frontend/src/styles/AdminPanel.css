@@ -1,0 +1,336 @@
+/* Admin Panel Container */
+.admin-panel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.admin-header h1 {
+  font-size: 36px;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+}
+
+.admin-header p {
+  color: #64748b;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Alerts */
+.alert {
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.alert-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.alert-success {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stat-number.pending {
+  color: #ea580c;
+}
+
+.stat-number.approved {
+  color: #16a34a;
+}
+
+.stat-number.rejected {
+  color: #dc2626;
+}
+
+.stat-label {
+  color: #64748b;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.filter-section label {
+  font-weight: 500;
+  color: #475569;
+  margin: 0;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+  color: #0f172a;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #7d9cc8;
+  box-shadow: 0 0 10px rgba(125, 156, 200, 0.2);
+}
+
+/* Loading & No Data */
+.loading,
+.no-data {
+  text-align: center;
+  padding: 60px 20px;
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* Registrations List */
+.registrations-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.registration-card {
+  background: white;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 12px;
+  padding: 24px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.registration-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.15);
+}
+
+.registration-card.pending {
+  border-left: 4px solid #ea580c;
+}
+
+.registration-card.approved {
+  border-left: 4px solid #16a34a;
+}
+
+.registration-card.rejected {
+  border-left: 4px solid #dc2626;
+}
+
+.registration-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.registration-header h3 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 18px;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.pending {
+  background: #fed7aa;
+  color: #92400e;
+}
+
+.status-badge.approved {
+  background: #bbf7d0;
+  color: #166534;
+}
+
+.status-badge.rejected {
+  background: #fecaca;
+  color: #991b1b;
+}
+
+.registration-info {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.registration-info p {
+  margin: 8px 0;
+  color: #475569;
+}
+
+.registration-info strong {
+  color: #0f172a;
+}
+
+/* Actions */
+.registration-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-approve {
+  background: #16a34a;
+  color: white;
+}
+
+.btn-approve:hover:not(:disabled) {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+.btn-reject {
+  background: #dc2626;
+  color: white;
+}
+
+.btn-reject:hover:not(:disabled) {
+  background: #b91c1c;
+  transform: translateY(-2px);
+}
+
+/* Rejection Form */
+.rejection-form {
+  background: #f8fafc;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.rejection-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #0f172a;
+  resize: vertical;
+  min-height: 80px;
+  margin-bottom: 12px;
+}
+
+.rejection-textarea:focus {
+  outline: none;
+  border-color: #7d9cc8;
+  box-shadow: 0 0 10px rgba(125, 156, 200, 0.2);
+}
+
+.rejection-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-confirm {
+  background: #dc2626;
+  color: white;
+  flex: 1;
+}
+
+.btn-confirm:hover {
+  background: #b91c1c;
+}
+
+.btn-cancel {
+  background: #cbd5e1;
+  color: #0f172a;
+  flex: 1;
+}
+
+.btn-cancel:hover {
+  background: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-panel-container {
+    padding: 20px 15px;
+  }
+
+  .admin-header h1 {
+    font-size: 28px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .registrations-list {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-actions {
+    flex-direction: column;
+  }
+}
