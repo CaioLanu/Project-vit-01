@@ -102,7 +102,7 @@ export default function Login() {
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <div className="input-wrapper">
-              <span className="input-icon">📧</span>
+              <span className="input-icon">@</span>
               <input
                 type="email"
                 id="email"
@@ -120,7 +120,7 @@ export default function Login() {
           <div className="form-group">
             <label htmlFor="password">Senha</label>
             <div className="input-wrapper">
-              <span className="input-icon">🔐</span>
+              <span className="input-icon">&#9679;</span>
               <input
                 type="password"
                 id="password"

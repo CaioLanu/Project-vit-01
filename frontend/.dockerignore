@@ -3,8 +3,6 @@ dist
 .env
 .env.*
 !.env.example
-*.pyc
-__pycache__
 *.log
 .DS_Store
 .git

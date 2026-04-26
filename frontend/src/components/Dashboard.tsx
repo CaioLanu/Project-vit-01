@@ -114,6 +114,25 @@ const Dashboard: React.FC = () => {
     }
   };
 
+  const fetchLunchRequests = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch('http://localhost:5000/api/lunch-requests', {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+      if (response.ok) {
+        const data = await response.json();
+        if (data.success) {
+          setLunchRequests(data.requests);
+        }
+      }
+    } catch (error) {
+      console.error('Erro ao buscar solicitações:', error);
+    }
+  };
+
   const fetchDailyOrders = async () => {
     try {
       setReportLoading(true);
@@ -471,7 +490,7 @@ const Dashboard: React.FC = () => {
                         <label>Unidade:</label>
                         <select
                           value={reportFilters.unit_id || ''}
-                          onChange={(e) => setReportFilters(prev => ({ ...prev, unit_id: e.target.value ? Number(e.target.value) : null }))}
+                          onChange={(e) => setReportFilters(prev => ({ ...prev, unit_id: e.target.value }))}
                         >
                           <option value="">Todas as unidades</option>
                           {units.map(unit => (
