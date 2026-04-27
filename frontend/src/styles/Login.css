@@ -131,13 +131,13 @@
 .login-header h1 {
   font-size: 32px;
   font-weight: 700;
-  color: #ffffff;
+  color: #353131;
   margin: 0;
   letter-spacing: 1.5px;
 }
 
 .subtitle {
-  color: #cbd5e1;
+  color: #161718;
   font-size: 14px;
   margin-top: 8px;
   letter-spacing: 1px;
@@ -170,19 +170,11 @@
   align-items: center;
 }
 
-.input-icon {
-  position: absolute;
-  left: 16px;
-  font-size: 18px;
-  color: #7d92ab;
-  pointer-events: none;
-  z-index: 2;
-}
 
 .input-wrapper input {
   width: 100%;
   padding: 14px 16px 14px 50px;
-  background: #f8fafc;
+  background: #3b4957;
   border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: 12px;
   color: #0f172a;
